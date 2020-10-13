@@ -1,2 +1,13 @@
-.h1
-  color: red
+@import 'fonts'
+
+$blue: #005ed0
+$orange: #ff6100
+
+.header
+  display: flex
+  justify-content: space-between
+
+.logo
+  &__title
+    +regular
+    text-transform: uppercase

@@ -11,12 +11,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sass|scss|css)$/i,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' },
-          { loader: 'sass-loader' },
-        ],
+        test: /\.sass|scss|css$/i,
+        exclude: /fonts/,
+        use: [ 'style-loader','css-loader','sass-loader' ],
       },
     ]
   },

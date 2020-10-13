@@ -11,7 +11,7 @@
   "license": "ISC",
   "scripts": {
     "build": "webpack",
-    "start": "npx webpack-dev-server  --open"
+    "start": "npx webpack-dev-server  --open --watch"
   },
   "dependencies": {
     "bootstrap": "^4.4.1"

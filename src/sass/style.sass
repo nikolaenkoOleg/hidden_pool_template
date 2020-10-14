@@ -122,71 +122,56 @@ header
         color: #ffffff
         text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 
-.ideas
-  padding-top: 80px
-  padding-bottom: 80px
-  &__text
-    width: 280px
-    margin-right: 120px
-    &-title
-      +regular
-      font-size: 40px
-      color: #333333
-      line-height: 40px
+.ideas-text
+  margin-top: 80px
+  margin-bottom: 80px
+  &__title
+    +regular
+    font-size: 40px
+    color: #333333
+    line-height: 40px
 
-      margin-bottom: 22px
-    &-description
-      +regular
-      font-size: 18px;
-      line-height: 28px;
+    margin-bottom: 22px
+  &__description
+    +regular
+    font-size: 18px;
+    line-height: 28px;
 
-      color: #333333;
+    color: #333333;
 
-      opacity: 0.7;
-  &__list
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    
-    width: 680px
-    height: 574px
+    opacity: 0.7;
+
+.ideas-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  
+  height: 574px
+
+  margin-top: 80px
+  margin-bottom: 80px
   &__card
     width: 180px
-    &-img-1
+    &-img
       width: 70px
       height: 70px
+    &-img-1
       background: url('../img/ideas/ideas-sprite.png') -10px -190px
     &-img-2
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -100px -100px
     &-img-3
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -190px -10px
     &-img-4
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -100px -10px;
     &-img-5
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -190px -190px;
     &-img-6
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -10px -100px;
     &-img-7
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -190px -100px;
     &-img-8
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -10px -10px;
     &-img-9
-      width: 70px
-      height: 70px
       background: url('../img/ideas/ideas-sprite.png') -100px -190px;
     &-caption
       +regular
@@ -204,3 +189,6 @@ header
       color: #5F5F5F;
 
       opacity: 0.8;
+
+@import 'hamburger.sass'
+@import 'media.sass'

@@ -14,7 +14,8 @@
     "start": "npx webpack-dev-server --open"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
     "css-loader": "^3.6.0",

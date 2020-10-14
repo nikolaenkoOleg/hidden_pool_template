@@ -16,13 +16,20 @@
             <img class="logo__img" src="/src/img/logo.png" alt="Логотип">
             <p class="logo__title">MasterSystem</p>
           </div>
-          <div class="nav">
-            <ul class="nav-list">
-              <li class="nav-list__item"><a href="#" class="nav-list__link">Кейсы</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__link">Особенности</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__link login">Вход</a></li>
-            </ul>
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Главная</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Проекты</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Команда</a></li>
+              </ul>
+            </nav>
+            <p class="nav-list__item"><a href="#" class="nav-list__link login">Вход</a></p>
           </div>
         </div>
       </div>
@@ -54,65 +61,63 @@
   <main>
     <section>
       <div class="container">
-        <div class="row">
-          <div class="ideas d-flex m-0">
-            <div class="col-lg-4">
-              <div class="ideas__text">
-                <h2 class="ideas__text-title">Идейные соображения</h2>
-                <p class="ideas__text-description">
-                  Решения, которые принимала наша команда, основаны на потребностях и желаниях конечного 
-                  пользователя. Благодаря им мы создали уникальную систему позволяющею эффективно управлять 
-                  вашим бизнесом.
-                </p>
-              </div>
+        <div class="row justify-content-between">
+          <div class="col-xl-4 col-lg-4 col-md-12">
+            <div class="ideas-text">
+              <h2 class="ideas-text__title">Идейные соображения</h2>
+              <p class="ideas-text__description">
+                Решения, которые принимала наша команда, основаны на потребностях и желаниях конечного 
+                пользователя. Благодаря им мы создали уникальную систему позволяющею эффективно управлять 
+                вашим бизнесом.
+              </p>
             </div>
-            <div class="col-lg-8">
-              <div class="ideas__list">
-                <div class="ideas__card">
-                  <div class="ideas__card-img-1"></div>
-                  <p class="ideas__card-caption">Глубокая проработка</p>
-                  <p class="ideas__card-description">Мы тщательно продумали UX и UI</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-2"></div>
-                  <p class="ideas__card-caption">Новейшие технологии</p>
-                  <p class="ideas__card-description">Только новейшие и проверенные технологии</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-3"></div>
-                  <p class="ideas__card-caption">Интуитивность</p>
-                  <p class="ideas__card-description">Интуитивное управление сайтом</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-4"></div>
-                  <p class="ideas__card-caption">Уникальный дизайн</p>
-                  <p class="ideas__card-description">Самобытный дизайн от специалистов </p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-5"></div>
-                  <p class="ideas__card-caption">Современная защита</p>
-                  <p class="ideas__card-description">Специалисты продумали защиту ваших данных</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-6"></div>
-                  <p class="ideas__card-caption">Быстрая поддержка</p>
-                  <p class="ideas__card-description">Обширный FAQ и система поддержки пользователей</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-7"></div>
-                  <p class="ideas__card-caption">Иллюстрации</p>
-                  <p class="ideas__card-description">Красивые иллюстрации, приятные глазу</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-8"></div>
-                  <p class="ideas__card-caption">Лучший код</p>
-                  <p class="ideas__card-description">Оптимизированный и качественный код</p>
-                </div>
-                <div class="ideas__card">
-                  <div class="ideas__card-img-9"></div>
-                  <p class="ideas__card-caption">Обучение</p>
-                  <p class="ideas__card-description">Наличие обучение работы с системой</p>
-                </div>
+          </div>
+          <div class="col-xl-7 col-lg-8 col-md-12">
+            <div class="ideas-list">
+              <div class="ideas-list__card">
+                <div class="ideas-list__card-img-1 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Глубокая проработка</p>
+                <p class="ideas-list__card-description">Мы тщательно продумали UX и UI</p>
+              </div>
+              <div class="ideas-list__card">
+                <div class="ideas-list__card-img-2 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Новейшие технологии</p>
+                <p class="ideas-list__card-description">Только новейшие и проверенные технологии</p>
+              </div>
+              <div class="ideas-list__card hidden-xs">
+                <div class="ideas-list__card-img-3 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Интуитивность</p>
+                <p class="ideas-list__card-description">Интуитивное управление сайтом</p>
+              </div>
+              <div class="ideas-list__card">
+                <div class="ideas-list__card-img-4 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Уникальный дизайн</p>
+                <p class="ideas-list__card-description">Самобытный дизайн от специалистов </p>
+              </div>
+              <div class="ideas-list__card">
+                <div class="ideas-list__card-img-5 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Современная защита</p>
+                <p class="ideas-list__card-description">Специалисты продумали защиту ваших данных</p>
+              </div>
+              <div class="ideas-list__card hidden-xs">
+                <div class="ideas-list__card-img-6 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Быстрая поддержка</p>
+                <p class="ideas-list__card-description">Обширный FAQ и система поддержки пользователей</p>
+              </div>
+              <div class="ideas-list__card hidden-xs">
+                <div class="ideas-list__card-img-7 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Иллюстрации</p>
+                <p class="ideas-list__card-description">Красивые иллюстрации, приятные глазу</p>
+              </div>
+              <div class="ideas-list__card hidden-xs">
+                <div class="ideas-list__card-img-8 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Лучший код</p>
+                <p class="ideas-list__card-description">Оптимизированный и качественный код</p>
+              </div>
+              <div class="ideas-list__card hidden-xs">
+                <div class="ideas-list__card-img-9 ideas-list__card-img"></div>
+                <p class="ideas-list__card-caption">Обучение</p>
+                <p class="ideas-list__card-description">Наличие обучение работы с системой</p>
               </div>
             </div>
           </div>

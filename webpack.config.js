@@ -12,9 +12,15 @@ module.exports = {
     rules: [
       {
         test: /\.sass|scss|css$/i,
-        exclude: /fonts/,
         use: [ 'style-loader','css-loader','sass-loader' ],
       },
+      {
+        test: /\.(woff(2)?|ttf|png)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      }, 
     ]
   },
   plugins: [

@@ -11,6 +11,9 @@ a
     text-decoration: none
 
 header
+  background-image: url('../img/header-bgc.svg');
+  background-size: contain
+
   background-color: $blue
 
 .header
@@ -23,6 +26,9 @@ header
 .logo
   display: flex
   justify-content: space-between
+  align-items: center
+
+  height: 22px
   &__title
     +regular
     color: #ffffff
@@ -30,16 +36,20 @@ header
     font-size: 18px
     margin: 0 0 0 7px 
 
+.button
+  margin-top: 14px
+
+.display-none
+  display: none
+
 .nav
   &-list
     display: flex
     align-items: center
-
-    margin-bottom: 0
+    &-login
+      display: none
     &__item
       margin-right: 40px
-      &:last-child
-        margin-right: 0
     &__link
       +regular
       color: #ffffff

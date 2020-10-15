@@ -15,12 +15,16 @@ module.exports = {
         use: [ 'style-loader','css-loader','sass-loader' ],
       },
       {
-        test: /\.(woff(2)?|ttf|png)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|png)?$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]'
         }
-      }, 
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
     ]
   },
   plugins: [

@@ -11,18 +11,31 @@ a
     text-decoration: none
 
 header
-  background-image: url('../img/header-bgc.svg');
-  background-repeat: no-repeat
-  background-size: contain
-
+  position: relative
   background-color: $blue
+
+  overflow: hidden
+  padding-bottom: 190px
+
+.svg-background
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  max-width: none
+  max-height: none
+
+  height: 100%
+  
 
 .header
   display: flex
   justify-content: space-between
   padding: 32px 0 130px 0
 
-  background-color: $blue
+  background-color: transarent
 
 .logo
   display: flex
@@ -40,17 +53,17 @@ header
 .button
   margin-top: 14px
 
-.display-none
-  display: none
+.visibility-hidden
+  visibility: hidden
 
 .nav
   &-list
     display: flex
     align-items: center
-    &-login
-      display: none
     &__item
       margin-right: 40px
+      &:last-child
+        margin-right: 0
     &__link
       +regular
       color: #ffffff
@@ -71,7 +84,6 @@ header
 
 .presentation
   width: 480px
-  padding-bottom: 193px
   &__title
     +bold
     line-height: 62px
